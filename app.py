@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Fetch functions
 # -------------------------------
 def fetch_posts():
-    return requests.get("https://jsonplaceholder.typicode.com/posts", timeout=5).json()
+    return requests.get("https://jsonplaceholder.typicode.com/posts", timeout=10).json()
 
 def fetch_comments():
     return requests.get("https://jsonplaceholder.typicode.com/comments", timeout=5).json()

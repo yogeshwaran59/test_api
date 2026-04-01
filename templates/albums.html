@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Albums</title>
+</head>
+<body>
+    <h1>Albums</h1>
+    <a href="/">⬅ Back</a>
+
+    {% for album in albums %}
+        <div style="margin-bottom: 10px;">
+            <strong>{{ album.title }}</strong>
+        </div>
+    {% endfor %}
+</body>
+</html>

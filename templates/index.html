@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask API Dashboard</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            color: #222;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 80px auto 0 auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60, 60, 120, 0.12);
+            padding: 40px 30px 30px 30px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2.2rem;
+            color: #3a3a7c;
+            letter-spacing: 1px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 40px 0 0 0;
+        }
+
+        li {
+            margin: 18px 0;
+        }
+
+        a {
+            text-decoration: none;
+            background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+            color: #fff;
+            padding: 12px 32px;
+            border-radius: 30px;
+            font-size: 1.08rem;
+            font-weight: 500;
+            display: inline-block;
+            box-shadow: 0 2px 8px rgba(67, 206, 162, 0.08);
+            transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+        }
+
+        a:hover {
+            background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+            color: #fff;
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 4px 16px rgba(24, 90, 157, 0.13);
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                max-width: 95vw;
+                padding: 20px 5vw 20px 5vw;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            a {
+                font-size: 1rem;
+                padding: 10px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome 🚀</h1>
+        <ul>
+            <li><a href="/posts">View Posts</a></li>
+            <li><a href="/comments">View Comments</a></li>
+            <li><a href="/albums">View Albums</a></li>
+        </ul>
+    </div>
+</body>
+</html>

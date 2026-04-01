@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comments</title>
+</head>
+<body>
+    <h1>Comments</h1>
+    <a href="/">⬅ Back</a>
+
+    {% for comment in comments %}
+        <div style="margin-bottom: 20px;">
+            <h4>{{ comment.name }}</h4>
+            <p>{{ comment.body }}</p>
+            <small>{{ comment.email }}</small>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>
